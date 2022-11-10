@@ -8,9 +8,11 @@ public class App
         var game = new Game();
         while (true)
         {
+            Console.Clear();
+
             Console.WriteLine($"Spelomgång {round}");
             game.Run();
-            System.Threading.Thread.Sleep(5000);
+            Thread.Sleep(2000);
             round++;
         }
     }
